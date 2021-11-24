@@ -18,6 +18,6 @@ Post.hasMany(Comment, {
     foreignKey: 'post_id'
 })
 
-Comment.belongsToMany(Post, {
+Comment.belongsTo(Post, {
     foreignKey: 'post_id'
 })
